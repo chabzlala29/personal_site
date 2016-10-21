@@ -5,4 +5,7 @@ RSpec.describe "Test" do
     expect(true).to eq true
   end
 
+  it "another test" do
+    expect("1".to_i).to eq 1
+  end
 end
