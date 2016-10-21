@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  username: postgres
+  pool: 5
+
+development:
+  <<: *default
+  database: personal_site_dev
+
+staging:
+  <<: *default
+  database: personal_site_staging
+
+test:
+  <<: *default
+  database: personal_site_test
+
+production:
+  <<: *default
+  database: personal_site
